@@ -14,6 +14,6 @@ while 1:
     print('wanna toss a coin?')
     if bool(input()) == 1:
         flip()
-    else:1
+    else:
         print('shame')
         break
