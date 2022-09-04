@@ -5,7 +5,6 @@ timmy.shape("turtle")
 
 screen = Screen()
 
-
 def draw(lil, sides):
     for _ in range(sides):
         lil.forward(100)
