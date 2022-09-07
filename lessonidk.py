@@ -18,7 +18,6 @@ def randdraw(lil, length):
         lil.forward(random() * 50)
         lil.right((randint(1, 4) * 90))
 
-
 print(screen.screensize())
 timmy.clear()
 timmy.speed(0)
