@@ -1,9 +1,11 @@
 from turtle import *
 from random import *
+
 timmy = Turtle()
 timmy.shape("turtle")
 
 screen = Screen()
+
 
 def draw(lil, sides):
     for _ in range(sides):
@@ -11,9 +13,16 @@ def draw(lil, sides):
         lil.right(360 / sides)
 
 
+def randdraw(lil, length):
+    for _ in range(length):
+        lil.forward(random() * 50)
+        lil.right((randint(1, 4) * 90))
+
+
+print(screen.screensize())
 timmy.clear()
-for shape in range(3,10):
-    draw(timmy, shape)
+timmy.speed(0)
+randdraw(timmy, 200)
 
 """
 
