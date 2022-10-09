@@ -29,8 +29,8 @@ screen.onkeypress(go_up, "Up")
 screen.onkeypress(go_down, "Down")
 
 
-
-while(True):
+is_game_on = True
+while is_game_on:
     screen.update()
 
 screen.exitonclick()
