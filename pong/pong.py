@@ -30,7 +30,9 @@ screen.onkeypress(go_down, "Down")
 
 
 is_game_on = True
+
 while is_game_on:
     screen.update()
 
 screen.exitonclick()
+print("testt")
