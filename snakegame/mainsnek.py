@@ -27,10 +27,8 @@ while is_game_on:
         plansza.update()
         time.sleep(1)
         is_game_on = False
-    for segments in wonsz.sneklist:
-        if segments == wonsz.head:
-            pass
-        elif wonsz.head.distance(segments) < 10:
+    for segments in wonsz.sneklist[1::]:
+        if wonsz.head.distance(segments) < 10:
             plansza.game_over()
             time.sleep(1)
             is_game_on = False
