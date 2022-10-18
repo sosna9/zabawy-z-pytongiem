@@ -22,7 +22,7 @@ while is_game_on:
         wonsz.extend()
 
     if wonsz.head.xcor() > 280 or wonsz.head.xcor() < -280 or wonsz.head.ycor() < -280 or wonsz.head.ycor() > 280:
-        print('dupa')
+        print('dududu')
         plansza.game_over()
         plansza.update()
         time.sleep(1)
