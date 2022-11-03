@@ -15,6 +15,20 @@ import pandas
 import pandas
 import numpy as np
 
-dupa = pandas.read_csv("weather_data.csv")
+dupa = pandas.read_csv("2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv")
 
-print(dupa[dupa.temp > 15])
+grey_ones_count = len(dupa[dupa["Primary Fur Color"] == "Gray"])
+red_ones_count = len(dupa[dupa["Primary Fur Color"] == "Cinnamon"])
+black_ones_count = len(dupa[dupa["Primary Fur Color"] == "Black"])
+# print(grey_ones_count)
+# print(red_ones_count)
+
+data_dict = {
+    "Fur Color": ["Gray", "Cinnamon", "Black"],
+    "count": [grey_ones_count, red_ones_count, black_ones_count]
+}
+# print (data_dict)
+
+df = pandas.DataFrame(data_dict)
+df.to_csv("wiewiurki.csv")
+print(dupa.head(2))
